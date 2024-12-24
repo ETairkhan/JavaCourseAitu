@@ -20,7 +20,7 @@ public class Student extends Person {
         }
     }
 
-    private double calculateGPA() {
+    public double calculateGPA() {
         if (grades.isEmpty()) return 0.0;
         int total = 0;
         for (int grade : grades){

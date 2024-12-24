@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         School school = new School();
-        Scanner studentScanner = new Scanner(new File("D:\\ReLearnJava\\Assignment1\\src\\students.txt"));
+        Scanner studentScanner = new Scanner(new File("D:\\ReLearnJava\\JavaCourseAitu\\Assignment1\\src\\students.txt"));
         while (studentScanner.hasNextLine()) {
             String[] data = studentScanner.nextLine().split(" "); // Split by spaces
             String name = data[0];
@@ -17,8 +17,9 @@ public class Main {
             }
             school.addMember(student);
         }
+        System.out.println();
 
-            Scanner teacherScanner = new Scanner(new File("D:\\ReLearnJava\\Assignment1\\src\\teachers.txt"));
+            Scanner teacherScanner = new Scanner(new File("D:\\ReLearnJava\\JavaCourseAitu\\Assignment1\\src\\teachers.txt"));
             while (teacherScanner.hasNextLine()) {
                 String[] data = teacherScanner.nextLine().split(" "); // Split by spaces
                 String name = data[0];
