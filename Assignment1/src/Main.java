@@ -17,7 +17,7 @@ public class Main {
             }
             school.addMember(student);
         }
-        System.out.println();
+        System.out.println();   
 
             Scanner teacherScanner = new Scanner(new File("D:\\ReLearnJava\\JavaCourseAitu\\Assignment1\\src\\teachers.txt"));
             while (teacherScanner.hasNextLine()) {
@@ -37,7 +37,7 @@ public class Main {
 
                 school.addMember(teacher);
             }
-            school.sortBySurname();
+
             System.out.println(school);
     }
 }
